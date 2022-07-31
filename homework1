@@ -11,6 +11,10 @@ func main() {
 	var isCowHeavy bool
 	var isSheepkgheavy bool
 	var isChickenHeavy bool
+	var x string
+	var y string
+	x = "Hi, I'm Tosuncuk"
+	y = "from Farm Bank."
 	var farm int
 	var cowAverageKg int
 	var sheepAverageKg int
@@ -46,6 +50,7 @@ func main() {
 	} else {
 		chickenAverageKg = 1
 	}
+
 	cowsAverageTotalKg = animalTotalKgFunc(cowsCount, cowAverageKg)
 	sheepsAverageTotalKg = animalTotalKgFunc(sheepsCount, sheepAverageKg)
 	chickensAverageTotalKg = animalTotalKgFunc(chickensCount, chickenAverageKg)
@@ -53,8 +58,7 @@ func main() {
 	cowsCountTotal = animalsCountTotalFunc(cowsCount, farm)
 	sheepsCountTotal = animalsCountTotalFunc(sheepsCount, farm)
 	chickensCountTotal = animalsCountTotalFunc(chickensCount, farm)
-
-	fmt.Println("Hi, I'm Tosuncuk from Farm Bank.")
+	fmt.Println(x, y)
 	fmt.Println(farm, "farm")
 	fmt.Println(cowsCountTotal, "cowsCountTotal")
 	fmt.Println(cowAverageKg, "cowAverageKg")
