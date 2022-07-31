@@ -54,7 +54,7 @@ func main() {
 	sheepsCountTotal = animalsCountTotalFunc(sheepsCount, farm)
 	chickensCountTotal = animalsCountTotalFunc(chickensCount, farm)
 
-	fmt.Println("Hi, I'm Tosuncuk from Çiftlik Bank.")
+	fmt.Println("Hi, I'm Tosuncuk from Farm Bank.")
 	fmt.Println(farm, "farm")
 	fmt.Println(cowsCountTotal, "cowsCountTotal")
 	fmt.Println(cowAverageKg, "cowAverageKg")
