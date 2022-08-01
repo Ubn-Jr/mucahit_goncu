@@ -13,7 +13,7 @@ func main() {
 	// tüm değişkenlerde yazım dilini aynı tutmak çok önemlidir
 	// camelCase yazım sistemi en ideal yöntemdir go dili için
 	// tüm değişken ve fonksiyonların camelCase e uygun olacak şekilde düzeltelim
-	var isSheepkgheavy bool
+	var isSheepHeavy bool
 	var isChickenHeavy bool
 	var x string
 	var y string
@@ -31,7 +31,7 @@ func main() {
 	var sheepsCountTotal int
 	var chickensCountTotal int
 	isCowHeavy = true
-	isSheepkgheavy = false
+	isSheepHeavy = false
 	isChickenHeavy = false
 
 	if isBigFarm {
@@ -44,7 +44,7 @@ func main() {
 	} else {
 		cowAverageKg = 300
 	}
-	if isSheepkgheavy {
+	if isSheepHeavy {
 		sheepAverageKg = 35
 	} else {
 		sheepAverageKg = 18
