@@ -15,7 +15,7 @@ func main() {
 	var y string
 	x = "Hi, I'm Tosuncuk"
 	y = "from Farm Bank."
-	var farm int
+	var barn int
 	var cowAverageKg int
 	var sheepAverageKg int
 	var chickenAverageKg int
@@ -31,9 +31,9 @@ func main() {
 	isChickenHeavy = false
 
 	if isBigFarm {
-		farm = 5
+		barn = 5
 	} else {
-		farm = 3
+		barn = 3
 	}
 	if isCowHeavy {
 		cowAverageKg = 500
@@ -54,21 +54,21 @@ func main() {
 	cowsAverageTotalKg = animalTotalKgFunc(cowsCount, cowAverageKg)
 	sheepsAverageTotalKg = animalTotalKgFunc(sheepsCount, sheepAverageKg)
 	chickensAverageTotalKg = animalTotalKgFunc(chickensCount, chickenAverageKg)
-	animalsTotalKg = animalsTotalKgFunc(cowsAverageTotalKg, sheepsAverageTotalKg, chickensAverageTotalKg, farm)
-	cowsCountTotal = animalsCountTotalFunc(cowsCount, farm)
-	sheepsCountTotal = animalsCountTotalFunc(sheepsCount, farm)
-	chickensCountTotal = animalsCountTotalFunc(chickensCount, farm)
+	animalsTotalKg = animalsTotalKgFunc(cowsAverageTotalKg, sheepsAverageTotalKg, chickensAverageTotalKg, barn)
+	cowsCountTotal = animalsCountTotalFunc(cowsCount, barn)
+	sheepsCountTotal = animalsCountTotalFunc(sheepsCount, barn)
+	chickensCountTotal = animalsCountTotalFunc(chickensCount, barn)
 	fmt.Println(x, y)
-	fmt.Println(farm, "farm")
+	fmt.Println(barn, "barn")
 	fmt.Println(cowsCountTotal, "cowsCountTotal")
 	fmt.Println(cowAverageKg, "cowAverageKg")
-	fmt.Println(cowsAverageTotalKg*farm, "cowsAverageTotalKg")
+	fmt.Println(cowsAverageTotalKg*barn, "cowsAverageTotalKg")
 	fmt.Println(sheepsCountTotal, "sheepsCountTotal")
 	fmt.Println(sheepAverageKg, "sheepAverageKg")
-	fmt.Println(sheepsAverageTotalKg*farm, "sheepsAverageTotalKg")
+	fmt.Println(sheepsAverageTotalKg*barn, "sheepsAverageTotalKg")
 	fmt.Println(chickensCountTotal, "chickensCountTotal")
 	fmt.Println(chickenAverageKg, "chickenAverageKg")
-	fmt.Println(chickensAverageTotalKg*farm, "chickensAverageTotalKg")
+	fmt.Println(chickensAverageTotalKg*barn, "chickensAverageTotalKg")
 	fmt.Println(animalsTotalKg, "animalsTotalKg")
 
 }
@@ -79,16 +79,16 @@ func animalTotalKgFunc(animals int, animalsAverageKg int) int {
 	return animalTotalKg
 }
 
-func animalsTotalKgFunc(cowsAverageTotalKg int, sheepsAverageTotalKg int, chickensAverageTotalKg int, farm int) int {
+func animalsTotalKgFunc(cowsAverageTotalKg int, sheepsAverageTotalKg int, chickensAverageTotalKg int, barn int) int {
 	var animalsTotalKg int
 
-	animalsTotalKg = (cowsAverageTotalKg + sheepsAverageTotalKg + chickensAverageTotalKg) * (farm)
+	animalsTotalKg = (cowsAverageTotalKg + sheepsAverageTotalKg + chickensAverageTotalKg) * (barn)
 	return animalsTotalKg
 
 }
-func animalsCountTotalFunc(animalsCount int, farm int) int {
+func animalsCountTotalFunc(animalsCount int, barn int) int {
 	var animalsCountTotal int
-	animalsCountTotal = animalsCount * farm
+	animalsCountTotal = animalsCount * barn
 
 	return animalsCountTotal
 }
