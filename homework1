@@ -9,6 +9,10 @@ func main() {
 	sheepsCount := 10
 	chickensCount := 5
 	var isCowHeavy bool
+	//TODO
+	// tüm değişkenlerde yazım dilini aynı tutmak çok önemlidir
+	// camelCase yazım sistemi en ideal yöntemdir go dili için
+	// tüm değişken ve fonksiyonların camelCase e uygun olacak şekilde düzeltelim
 	var isSheepkgheavy bool
 	var isChickenHeavy bool
 	var x string
