@@ -7,12 +7,12 @@ import (
 
 func main() {
 	var classStudents [3][10]string = [3][10]string{{"ali", "ahmet", "mehmet", "can", "cengiz", "polat", "memati", "abdulhey", "erhan", "süleyman"}, {"acun", "adem", "adnan", "arda", "alperen", "ata", "aykut", "ceyhun", "kılıç", "demir"}, {"batu", "bahadır", "mehmet", "barış", "savaş", "burak", "bülent", "yılmaz", "caner", "cüneyt"}}
-	var classstudentNotes [3][10]int = [3][10]int{{56, 93, 75, 92, 45, 99, 50, 67, 95, 99}, {73, 89, 45, 88, 95, 77, 97, 23, 35, 45}, {96, 48, 89, 95, 90, 99, 97, 67, 53, 10}}
+	var classStudentNotes [3][10]int = [3][10]int{{56, 93, 75, 92, 45, 99, 50, 67, 95, 99}, {73, 89, 45, 88, 95, 77, 97, 23, 35, 45}, {96, 48, 89, 95, 90, 99, 97, 67, 53, 10}}
 
 	var err error
 	var err2 error
 
-	studentGradeEvaluation, err, err2 := studentGradeEvaluationFunc(classStudents, classstudentNotes)
+	studentGradeEvaluation, err, err2 := studentGradeEvaluationFunc(classStudents, classStudentNotes)
 	if err != nil {
 		fmt.Println(err)
 	} else {
@@ -115,4 +115,5 @@ func bestClassCalculationFunc(successfulClassNumberOfSuccess1 int, successfulCla
 	return successfulClass1, err2
 
 }
+
 
