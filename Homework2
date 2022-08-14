@@ -64,6 +64,7 @@ func studentGradeEvaluationFunc(classStudents [3][10]string, studentNotes [3][10
 		fmt.Println("veryGoodStudents", veryGoodStudents)
 		classNumberOfAchievements[i] = veryGoodStudents
 
+
 	}
 	fmt.Println("veryGoodStudentsTotal", veryGoodStudentsTotal)
 	var successfulClass int
