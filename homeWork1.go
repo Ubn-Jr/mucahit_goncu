@@ -74,7 +74,6 @@ func main() {
 	fmt.Println(chickenAverageKg, "chickenAverageKg")
 	fmt.Println(chickensAverageTotalKg*barn, "chickensAverageTotalKg")
 	fmt.Println(animalsTotalKg, "animalsTotalKg")
-
 }
 func animalTotalKgFunc(animals int, animalsAverageKg int) int {
 	var animalTotalKg int
