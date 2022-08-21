@@ -43,7 +43,6 @@ func main() {
 		case 15000 < housesM2[i]:
 			missedJobPrice += housesM2[i]
 			fallthrough
-
 		case 150 > housesM2[i]:
 			switch {
 			case 150 > housesM2[i]:
