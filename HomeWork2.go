@@ -32,7 +32,6 @@ func main() {
 }
 func studentGradeEvaluationFunc(classStudents [3][10]string, studentNotes [3][10]int) (studentGradeEvaluation int, err error, err2 error) {
 	var classNumberOfAchievements [3]int = [3]int{0, 0, 0}
-
 	fmt.Println("Evaluation started")
 	veryGoodStudents := 0
 	veryGoodStudentsTotal := 0
